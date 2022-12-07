@@ -65,5 +65,26 @@ namespace ProcessarXMLNfe
             }
         }
 
+        public Boolean inserirBlob(string insertSql, Byte[] byteArrayparam, OracleConnection connection)
+        {
+            try
+            {
+                OracleCommand command = new OracleCommand();
+                command.Connection = connection;
+                command.CommandText = insertSql;                
+
+                OracleParameter blobparam = new OracleParameter("blobparam", OracleType.Blob, byteArrayparam.Length);
+                blobparam.Direction = ParameterDirection.Input;
+                blobparam.Value = byteArrayparam;
+                command.Parameters.Add(blobparam);
+                command.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
     }
 }

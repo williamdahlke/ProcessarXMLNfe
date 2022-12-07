@@ -63,18 +63,19 @@ namespace ProcessarXMLNfe
                 readerNota.Close();
                 con.desconectarBanco(connection);
 
-                //Processar o XML e colocar todos os dados dele dentro da variável sXML
-                string sXml = "";
-                var lines = File.ReadAllLines(sLocal);
-                foreach (var line in lines)
-                {
-                    sXml = sXml + line;
-                }
-
                 //Inserir os dados com uma das colunas do tipo CLOB
-                sqlQuery = "insert into xml_nfe values ('" + txt_chave.Text + "', :clobparam)";
-                con.conectarBanco(connection);
-                Boolean bSalvou = con.inserirClob(sqlQuery, sXml, connection);
+                sqlQuery = "insert into xml_nfe values ('" + txt_chave.Text + "', :blobparam)";
+                con.conectarBanco(connection);               
+
+                //Converter o conteúdo do arquivo referenciado na variável sLocal para um array chamado byteArrayparam
+                FileStream fs = new FileStream(sLocal, FileMode.Open, FileAccess.Read);
+                Byte[] byteArrayparam = null;
+                byteArrayparam = new Byte[fs.Length];
+                fs.Read(byteArrayparam, 0, byteArrayparam.Length);
+                fs.Close();
+
+                //Salvar o conteúdo no DB Oracle
+                Boolean bSalvou = con.inserirBlob(sqlQuery, byteArrayparam, connection);
 
                 if (bSalvou == true)
                 {
