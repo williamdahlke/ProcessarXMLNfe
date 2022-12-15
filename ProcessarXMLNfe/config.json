@@ -1,0 +1,9 @@
+{
+  "connection_string_oracle": "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.0.17)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME = cristi)));User Id=@1;Password=@2;",
+  "connection_user": "vestis01",
+  "connection_password": "vestis01",
+  "server_smtp": "mail.cristina.com.br",
+  "email_from": "ti@cristina.com.br",
+  "password_email_from": "wSZ/3[l(2e",
+  "email_to": "william.ti@cristina.com.br"
+}
