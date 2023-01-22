@@ -1,0 +1,11 @@
+C:\Users\william.ti.CRISTINA_DOM\source\repos\ProcessarXmlConsole\bin\Debug\ProcessarXmlConsole.exe.config
+C:\Users\william.ti.CRISTINA_DOM\source\repos\ProcessarXmlConsole\bin\Debug\ProcessarXmlConsole.exe
+C:\Users\william.ti.CRISTINA_DOM\source\repos\ProcessarXmlConsole\bin\Debug\ProcessarXmlConsole.pdb
+C:\Users\william.ti.CRISTINA_DOM\source\repos\ProcessarXmlConsole\obj\Debug\ProcessarXmlConsole.csproj.AssemblyReference.cache
+C:\Users\william.ti.CRISTINA_DOM\source\repos\ProcessarXmlConsole\obj\Debug\ProcessarXmlConsole.csproj.SuggestedBindingRedirects.cache
+C:\Users\william.ti.CRISTINA_DOM\source\repos\ProcessarXmlConsole\obj\Debug\ProcessarXmlConsole.csproj.CoreCompileInputs.cache
+C:\Users\william.ti.CRISTINA_DOM\source\repos\ProcessarXmlConsole\obj\Debug\ProcessarXmlConsole.exe
+C:\Users\william.ti.CRISTINA_DOM\source\repos\ProcessarXmlConsole\obj\Debug\ProcessarXmlConsole.pdb
+C:\Users\william.ti.CRISTINA_DOM\source\repos\ProcessarXmlConsole\bin\Debug\Newtonsoft.Json.dll
+C:\Users\william.ti.CRISTINA_DOM\source\repos\ProcessarXmlConsole\bin\Debug\Newtonsoft.Json.xml
+C:\Users\william.ti.CRISTINA_DOM\source\repos\ProcessarXmlConsole\obj\Debug\ProcessarXmlConsole.csproj.CopyComplete
